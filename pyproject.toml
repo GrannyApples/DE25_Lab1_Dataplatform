@@ -1,0 +1,9 @@
+[project]
+name = "dataplatform-lab1-anton-e"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=3.0.0",
+    "psycopg[binary,pool]>=3.3.2",
+]
