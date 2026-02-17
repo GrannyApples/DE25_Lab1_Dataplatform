@@ -64,13 +64,14 @@ This will not.
             raise ValueError("Negative price")
         return v
 ```
-If i update the code to it still doesnt work with pydantic,
+If i update the code to this other verison,
+it still doesnt work with pydantic,
     you would expect it to since you catch it before you convert anything.
 ```python
 @validator("price", pre=True)
 def convert_price(cls, v):
     # Reject invalid or missing prices
-    if v is None:
+    if v is None or "":
         raise ValueError("Price is null")
     if isinstance(v, str):
         v_stripped = v.strip().lower()
@@ -80,12 +81,14 @@ def convert_price(cls, v):
             return 0
     return v
 ```
-```python
 What you need to do is make a check in the transform layer,
-to check for null on float values.
-    
-if pd.isna(record.get("price")):
-        rejected_records.append(record)
+to check for null on manual price.
+
+```python
+
+for record in df.to_dict(orient="records"):
+    if pd.isna(record.get("price")):
+            rejected_records.append(record)
         continue
 ```
 
@@ -107,17 +110,24 @@ from validate import Product, ValidationError
             continue
 
 ```
+This version does work, and i would assume you could reuse this for any basemodel where you use 
+pydantic and floats.
 
 Teori:
 
 Ingest = ta in rådata från källa i.e products.csv
+
 storage = spara rådata, ie data/processed.json
-transform = rensa, konvertera och validera data. clean data function.
+
+transform = rensa, konvertera och validera data. transform/clean_data function.
 
 access = allt i data/outputs ie analyser, rapporter och göra datan tillgänglig.
 
 
 ETL:
+
 Extract Hämta rådata
+
 transform rensa/omvandla data till läsbart format
+
 load Spara data för senare användning, t.ex analys o rapport.
