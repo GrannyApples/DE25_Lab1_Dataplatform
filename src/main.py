@@ -18,8 +18,8 @@ if __name__ == '__main__':
 
     csv_to_json(raw_csv, processed_json)
     ##Using the transform function to filter out what is needed according to the pdf file.
-    clea_df, rejected_df = clean_data(processed_json)
+    clean_df, rejected_df = clean_data(processed_json)
     ##data/processed/rejected.json, is the same as outputs, just using pydantic.
     rejected_df.to_json(rejected_json, orient="records", indent=2)
 
-    run_analysis(clea_df)
+    run_analysis(clean_df, rejected_df)
