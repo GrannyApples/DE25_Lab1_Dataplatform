@@ -13,13 +13,15 @@ PROCESSED_DIR = BASE_DIR / "data" / "processed"
 if __name__ == '__main__':
     ##Ingest function to take the raw file and give me a processed json according to pdf instructions.
     raw_csv = RAW_DIR / "products.csv"
+    raw_json = RAW_DIR / "products.json"
     processed_json = PROCESSED_DIR / "products.json"
     rejected_json = PROCESSED_DIR / "rejected.json"
 
-    csv_to_json(raw_csv, processed_json)
+    csv_to_json(raw_csv, raw_json)
     ##Using the transform function to filter out what is needed according to the pdf file.
-    clean_df, rejected_df = clean_data(processed_json)
+    clean_df, rejected_df = clean_data(raw_json)
     ##data/processed/rejected.json, is the same as outputs, just using pydantic.
+    clean_df.to_json(processed_json, orient="records", indent=2)
     rejected_df.to_json(rejected_json, orient="records", indent=2)
 
     run_analysis(clean_df, rejected_df)

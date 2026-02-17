@@ -11,13 +11,20 @@ def run_analysis(clean_df: pd.DataFrame, rejected_df: pd.DataFrame):
     PRICE_ANALYSIS = PATH_DIR / "price_analysis.json"
     REJECTED_ANALYSIS = PATH_DIR / "rejected_products.json"
 
+    clean_df["price"] = pd.to_numeric(clean_df["price"], errors="coerce")
+    rejected_df["price"] = pd.to_numeric(rejected_df["price"], errors="coerce")
+    full_df = pd.concat([clean_df, rejected_df], ignore_index=True)
+
+    ##Ensure prices are numeric, need this check to grab the missing price count, before validation or anything else.
+    full_df["price"] = pd.to_numeric(full_df["price"], errors="coerce")
 
     summary = pd.DataFrame({
-        "average_price": [clean_df["price"].mean()],
-        "median_price": [clean_df["price"].median()],
-        "product_count": [len(clean_df)],
-        "missing_price_count": [clean_df["price"].isna().sum()]
+        "average_price": [full_df["price"].mean()],
+        "median_price": [full_df["price"].median()],
+        "product_count": [len(full_df)],
+        "missing_price_count": [full_df["price"].isna().sum()]
     })
+
 
     summary.to_json(ANALYTICS_SUMMARY, orient="records", indent=2)
 

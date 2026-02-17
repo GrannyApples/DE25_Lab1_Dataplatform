@@ -13,17 +13,13 @@ class Product(BaseModel):
 
     @validator("price", pre=True)
     def convert_price(cls, v):
-        if v is None or "":
-            raise ValueError("Price is null")
         # Convert "free" to 0 or other strings to None
         # the free = 0 happens before validation since we are using pre=True, and thus the free prices will be converted into
         # 0 and placed into products.json as price=0 instead of price=free, the rest will land in the rejected.json
         if isinstance(v, str):
             v_stripped = v.strip().lower()
-            if v_stripped in ["", "not_available", "null"]:
+            if v_stripped in ["", "not_available", "null", "free"]:
                 raise ValueError("Price is invalid")
-            if v_stripped == "free":
-                return 0
         return v
     ##check positive price
     @validator("price")

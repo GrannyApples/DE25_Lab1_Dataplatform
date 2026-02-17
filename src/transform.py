@@ -39,9 +39,6 @@ def clean_data(path):
     rejected_df = pd.DataFrame(rejected_records)
 
 
-    clean_df["missing_currency"] = clean_df["currency"].isna() | (clean_df["currency"] == "")
-    clean_df["zero_price"] = clean_df["price"] == 0
-    clean_df["extreme_price"] = clean_df["price"] > 2500
 
     return clean_df, rejected_df
     ##########

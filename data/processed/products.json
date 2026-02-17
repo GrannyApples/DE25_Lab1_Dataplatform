@@ -1,387 +1,310 @@
 [
   {
     "id":"SKU-1001",
-    "name":" shoes ",
-    "price":"799",
+    "name":"shoes",
+    "price":799.0,
     "currency":"SEK",
-    "created_at":"2024-01-10"
+    "created_at":1704844800000
   },
   {
     "id":"SKU-1002",
     "name":"pants",
-    "price":"520",
+    "price":520.0,
     "currency":"SEK",
-    "created_at":"2024\/02\/15"
-  },
-  {
-    "id":"SKU-1003",
-    "name":"shirts",
-    "price":"450",
-    "currency":"SEK",
-    "created_at":null
-  },
-  {
-    "id":null,
-    "name":"jacket",
-    "price":"-200",
-    "currency":" SEK ",
-    "created_at":"2024-13-01"
-  },
-  {
-    "id":"SKU-1005",
-    "name":null,
-    "price":null,
-    "currency":null,
-    "created_at":" "
-  },
-  {
-    "id":"SKU-1006",
-    "name":"designer coat",
-    "price":null,
-    "currency":"SEK",
-    "created_at":"2024-05-01"
-  },
-  {
-    "id":null,
-    "name":"hat",
-    "price":"free",
-    "currency":"SEK",
-    "created_at":null
-  },
-  {
-    "id":"SKU-1008",
-    "name":" gloves ",
-    "price":"120",
-    "currency":null,
-    "created_at":"2024-06-20"
+    "created_at":1707955200000
   },
   {
     "id":"SKU-1009",
     "name":"socks",
-    "price":"99",
+    "price":99.0,
     "currency":"SEK",
-    "created_at":"2024-02-01"
+    "created_at":1706745600000
   },
   {
     "id":"SKU-1010",
     "name":"boots",
-    "price":"1500",
+    "price":1500.0,
     "currency":"SEK",
-    "created_at":"2024-02-15"
+    "created_at":1707955200000
   },
   {
     "id":"SKU-1011",
     "name":"scarf",
-    "price":"200",
+    "price":200.0,
     "currency":"SEK",
-    "created_at":"2024-03-01"
+    "created_at":1709251200000
   },
   {
     "id":"SKU-1012",
     "name":"belt",
-    "price":"300",
+    "price":300.0,
     "currency":"SEK",
-    "created_at":"2024\/03\/10"
+    "created_at":1710028800000
   },
   {
     "id":"SKU-1013",
     "name":"cap",
-    "price":"75",
+    "price":75.0,
     "currency":"SEK",
-    "created_at":"2024-04-01"
+    "created_at":1711929600000
   },
   {
     "id":"SKU-1014",
     "name":"t-shirt",
-    "price":"0",
+    "price":0.0,
     "currency":"SEK",
-    "created_at":"2024-04-10"
-  },
-  {
-    "id":"SKU-1015",
-    "name":"hoodie",
-    "price":"-50",
-    "currency":"SEK",
-    "created_at":"2024-04-15"
+    "created_at":1712707200000
   },
   {
     "id":"SKU-1016",
     "name":"coat",
-    "price":"2500",
+    "price":2500.0,
     "currency":"SEK",
-    "created_at":"2024-05-01"
+    "created_at":1714521600000
   },
   {
     "id":"SKU-1017",
     "name":"jeans",
-    "price":"800",
+    "price":800.0,
     "currency":"SEK",
-    "created_at":"2024-05-05"
+    "created_at":1714867200000
   },
   {
     "id":"SKU-1018",
     "name":"sneakers",
-    "price":"1200",
+    "price":1200.0,
     "currency":"SEK",
-    "created_at":"2024-05-10"
+    "created_at":1715299200000
   },
   {
     "id":"SKU-1019",
     "name":"sandals",
-    "price":"400",
+    "price":400.0,
     "currency":"SEK",
-    "created_at":"2024-05-15"
+    "created_at":1715731200000
   },
   {
     "id":"SKU-1020",
     "name":"watch",
-    "price":"15000",
+    "price":15000.0,
     "currency":"SEK",
-    "created_at":"2024-06-01"
+    "created_at":1717200000000
   },
   {
     "id":"SKU-1021",
     "name":"ring",
-    "price":"25000",
+    "price":25000.0,
     "currency":"SEK",
-    "created_at":"2024-06-05"
+    "created_at":1717545600000
   },
   {
     "id":"SKU-1022",
     "name":"bracelet",
-    "price":"500",
+    "price":500.0,
     "currency":"SEK",
-    "created_at":"2024-06-10"
+    "created_at":1717977600000
   },
   {
     "id":"SKU-1023",
-    "name":" necklace ",
-    "price":"650",
+    "name":"necklace",
+    "price":650.0,
     "currency":"SEK",
-    "created_at":"2024-06-15"
+    "created_at":1718409600000
   },
   {
     "id":"SKU-1024",
     "name":"sunglasses",
-    "price":"900",
+    "price":900.0,
     "currency":"SEK",
-    "created_at":"2024-07-01"
+    "created_at":1719792000000
   },
   {
     "id":"SKU-1025",
     "name":"backpack",
-    "price":"1100",
+    "price":1100.0,
     "currency":"SEK",
-    "created_at":"2024-07-05"
+    "created_at":1720137600000
   },
   {
     "id":"SKU-1026",
     "name":"umbrella",
-    "price":"300",
+    "price":300.0,
     "currency":"SEK",
-    "created_at":"2024-07-10"
+    "created_at":1720569600000
   },
   {
     "id":"SKU-1027",
-    "name":" winter jacket ",
-    "price":"3500",
+    "name":"winter jacket",
+    "price":3500.0,
     "currency":"SEK",
-    "created_at":"2024-07-15"
+    "created_at":1721001600000
   },
   {
     "id":"SKU-1028",
     "name":"shorts",
-    "price":"450",
+    "price":450.0,
     "currency":"SEK",
-    "created_at":"2024-08-01"
+    "created_at":1722470400000
   },
   {
     "id":"SKU-1029",
     "name":"skirt",
-    "price":"500",
+    "price":500.0,
     "currency":"SEK",
-    "created_at":"2024-08-05"
+    "created_at":1722816000000
   },
   {
     "id":"SKU-1030",
     "name":"gloves",
-    "price":"200",
+    "price":200.0,
     "currency":"SEK",
-    "created_at":"2024-08-10"
+    "created_at":1723248000000
   },
   {
     "id":"SKU-1031",
     "name":"mittens",
-    "price":"220",
+    "price":220.0,
     "currency":"SEK",
-    "created_at":"2024-08-15"
+    "created_at":1723680000000
   },
   {
     "id":"SKU-1032",
     "name":"suit",
-    "price":"5000",
+    "price":5000.0,
     "currency":"SEK",
-    "created_at":"2024-09-01"
+    "created_at":1725148800000
   },
   {
     "id":"SKU-1033",
     "name":"tie",
-    "price":"150",
+    "price":150.0,
     "currency":"SEK",
-    "created_at":"2024-09-05"
+    "created_at":1725494400000
   },
   {
     "id":"SKU-1034",
     "name":"blazer",
-    "price":"2200",
+    "price":2200.0,
     "currency":"SEK",
-    "created_at":"2024-09-10"
+    "created_at":1725926400000
   },
   {
     "id":"SKU-1035",
     "name":"polo",
-    "price":"600",
+    "price":600.0,
     "currency":"SEK",
-    "created_at":"2024-09-15"
+    "created_at":1726358400000
   },
   {
     "id":"SKU-1036",
     "name":"leggings",
-    "price":"350",
+    "price":350.0,
     "currency":"SEK",
-    "created_at":"2024-10-01"
+    "created_at":1727740800000
   },
   {
     "id":"SKU-1037",
     "name":"tracksuit",
-    "price":"1200",
+    "price":1200.0,
     "currency":"SEK",
-    "created_at":"2024-10-05"
+    "created_at":1728086400000
   },
   {
     "id":"SKU-1038",
     "name":"swimsuit",
-    "price":"700",
+    "price":700.0,
     "currency":"SEK",
-    "created_at":"2024-10-10"
+    "created_at":1728518400000
   },
   {
     "id":"SKU-1039",
     "name":"coat",
-    "price":"999999",
+    "price":999999.0,
     "currency":"SEK",
-    "created_at":"2024-10-15"
+    "created_at":1728950400000
   },
   {
     "id":"SKU-1040",
     "name":"parka",
-    "price":"4500",
+    "price":4500.0,
     "currency":"SEK",
-    "created_at":"2024-11-01"
+    "created_at":1730419200000
   },
   {
     "id":"SKU-1041",
     "name":"beanie",
-    "price":"180",
+    "price":180.0,
     "currency":"SEK",
-    "created_at":"2024-11-05"
+    "created_at":1730764800000
   },
   {
     "id":"SKU-1042",
     "name":"earmuffs",
-    "price":"130",
+    "price":130.0,
     "currency":"SEK",
-    "created_at":"2024-11-10"
-  },
-  {
-    "id":"SKU-1043",
-    "name":"cardigan",
-    "price":null,
-    "currency":"SEK",
-    "created_at":"2024-11-15"
+    "created_at":1731196800000
   },
   {
     "id":"SKU-1044",
     "name":"vest",
-    "price":"800",
+    "price":800.0,
     "currency":"SEK",
-    "created_at":"2024-12-01"
+    "created_at":1733011200000
   },
   {
     "id":"SKU-1045",
     "name":"loafers",
-    "price":"1100",
+    "price":1100.0,
     "currency":"SEK",
-    "created_at":"2024-12-05"
+    "created_at":1733356800000
   },
   {
     "id":"SKU-1046",
-    "name":" sneakers ",
-    "price":"1000",
+    "name":"sneakers",
+    "price":1000.0,
     "currency":"SEK",
-    "created_at":"2024-12-10"
+    "created_at":1733788800000
   },
   {
     "id":"SKU-1047",
     "name":"heels",
-    "price":"1500",
+    "price":1500.0,
     "currency":"SEK",
-    "created_at":"2024-12-15"
+    "created_at":1734220800000
   },
   {
     "id":"SKU-1048",
     "name":"flipflops",
-    "price":"100",
+    "price":100.0,
     "currency":"SEK",
-    "created_at":"2024-12-20"
+    "created_at":1734652800000
   },
   {
     "id":"SKU-1049",
     "name":"robe",
-    "price":"900",
+    "price":900.0,
     "currency":"SEK",
-    "created_at":"2024-12-25"
+    "created_at":1735084800000
   },
   {
     "id":"SKU-1050",
     "name":"pyjamas",
-    "price":"600",
+    "price":600.0,
     "currency":"SEK",
-    "created_at":"2025-01-01"
+    "created_at":1735689600000
   },
   {
     "id":"SKU-1051",
     "name":"suspenders",
-    "price":"250",
+    "price":250.0,
     "currency":"SEK",
-    "created_at":"2025-01-05"
-  },
-  {
-    "id":"SKU-1052",
-    "name":"coat",
-    "price":"not_available",
-    "currency":"SEK",
-    "created_at":"2025-01-10"
+    "created_at":1736035200000
   },
   {
     "id":"SKU-1053",
     "name":"cap",
-    "price":"85",
+    "price":85.0,
     "currency":"SEK",
-    "created_at":"2025-01-15"
-  },
-  {
-    "id":"SKU-1054",
-    "name":null,
-    "price":"450",
-    "currency":"SEK",
-    "created_at":"2025-02-01"
-  },
-  {
-    "id":"SKU-1055",
-    "name":"scarf",
-    "price":"300",
-    "currency":null,
-    "created_at":"2025-02-05"
+    "created_at":1736899200000
   }
 ]
