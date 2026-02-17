@@ -4,69 +4,69 @@
     "name":"coat",
     "price":999999.0,
     "currency":"SEK",
-    "created_at":1728950400000
+    "created_at":"2024-10-15T00:00:00.000"
   },
   {
     "id":"SKU-1021",
     "name":"ring",
     "price":25000.0,
     "currency":"SEK",
-    "created_at":1717545600000
+    "created_at":"2024-06-05T00:00:00.000"
   },
   {
     "id":"SKU-1020",
     "name":"watch",
     "price":15000.0,
     "currency":"SEK",
-    "created_at":1717200000000
+    "created_at":"2024-06-01T00:00:00.000"
   },
   {
     "id":"SKU-1032",
     "name":"suit",
     "price":5000.0,
     "currency":"SEK",
-    "created_at":1725148800000
+    "created_at":"2024-09-01T00:00:00.000"
   },
   {
     "id":"SKU-1040",
     "name":"parka",
     "price":4500.0,
     "currency":"SEK",
-    "created_at":1730419200000
+    "created_at":"2024-11-01T00:00:00.000"
   },
   {
     "id":"SKU-1027",
     "name":"winter jacket",
     "price":3500.0,
     "currency":"SEK",
-    "created_at":1721001600000
+    "created_at":"2024-07-15T00:00:00.000"
   },
   {
     "id":"SKU-1016",
     "name":"coat",
     "price":2500.0,
     "currency":"SEK",
-    "created_at":1714521600000
+    "created_at":"2024-05-01T00:00:00.000"
   },
   {
     "id":"SKU-1034",
     "name":"blazer",
     "price":2200.0,
     "currency":"SEK",
-    "created_at":1725926400000
+    "created_at":"2024-09-10T00:00:00.000"
   },
   {
     "id":"SKU-1010",
     "name":"boots",
     "price":1500.0,
     "currency":"SEK",
-    "created_at":1707955200000
+    "created_at":"2024-02-15T00:00:00.000"
   },
   {
     "id":"SKU-1047",
     "name":"heels",
     "price":1500.0,
     "currency":"SEK",
-    "created_at":1734220800000
+    "created_at":"2024-12-15T00:00:00.000"
   }
 ]

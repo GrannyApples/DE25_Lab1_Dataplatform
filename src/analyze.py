@@ -26,9 +26,9 @@ def run_analysis(clean_df: pd.DataFrame, rejected_df: pd.DataFrame):
     })
 
 
-    summary.to_json(ANALYTICS_SUMMARY, orient="records", indent=2)
+    summary.to_json(ANALYTICS_SUMMARY, orient="records", indent=2, date_format="iso")
 
     top_expensive = clean_df.nlargest(10, "price")
-    top_expensive.to_json(PRICE_ANALYSIS, orient="records", indent=2)
+    top_expensive.to_json(PRICE_ANALYSIS, orient="records", indent=2, date_format="iso")
 
-    rejected_df.to_json(REJECTED_ANALYSIS, orient="records", indent=2)
+    rejected_df.to_json(REJECTED_ANALYSIS, orient="records", indent=2, date_format="iso")

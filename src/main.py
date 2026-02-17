@@ -1,5 +1,6 @@
 from pathlib import Path
 from ingest import csv_to_json
+import pandas as pd
 from transform import clean_data
 from analyze import run_analysis
 
@@ -21,7 +22,7 @@ if __name__ == '__main__':
     ##Using the transform function to filter out what is needed according to the pdf file.
     clean_df, rejected_df = clean_data(raw_json)
     ##data/processed/rejected.json, is the same as outputs, just using pydantic.
-    clean_df.to_json(processed_json, orient="records", indent=2)
-    rejected_df.to_json(rejected_json, orient="records", indent=2)
+    clean_df.to_json(processed_json, orient="records", indent=2, date_format="iso")
+    rejected_df.to_json(rejected_json, orient="records", indent=2, date_format="iso")
 
     run_analysis(clean_df, rejected_df)
