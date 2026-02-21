@@ -10,6 +10,7 @@ def run_analysis(clean_df: pd.DataFrame, rejected_df: pd.DataFrame):
     ANALYTICS_SUMMARY = PATH_DIR / "analytics_summary.json"
     PRICE_ANALYSIS = PATH_DIR / "price_analysis.json"
     REJECTED_ANALYSIS = PATH_DIR / "rejected_products.json"
+    DEVIANT_PRICES = PATH_DIR / "deviant_prices.json"
 
     clean_df["price"] = pd.to_numeric(clean_df["price"], errors="coerce")
     rejected_df["price"] = pd.to_numeric(rejected_df["price"], errors="coerce")
@@ -25,10 +26,22 @@ def run_analysis(clean_df: pd.DataFrame, rejected_df: pd.DataFrame):
         "missing_price_count": [full_df["price"].isna().sum()]
     })
 
+    median_price = full_df["price"].median()
+    deviant_prices = full_df[
+        (full_df["price"] < median_price * 0.5) |
+        (full_df["price"] > median_price * 4)
+    ]
+
+    #median is 510, so everything above 2040 and below 255 is shown in the median. you can obviously tinker with this as you like
+    ## but its kinda hard to know exactly what would classify as a "deviation" from the statistical.
+
+    deviant_prices["deviation"] = (deviant_prices["price"] - median_price).abs()
+    top10_outliers = deviant_prices.nlargest(10, "deviation")
+
+    top10_outliers.to_json(DEVIANT_PRICES, orient="records", indent=2, date_format="iso")
 
     summary.to_json(ANALYTICS_SUMMARY, orient="records", indent=2, date_format="iso")
 
     top_expensive = clean_df.nlargest(10, "price")
     top_expensive.to_json(PRICE_ANALYSIS, orient="records", indent=2, date_format="iso")
-
     rejected_df.to_json(REJECTED_ANALYSIS, orient="records", indent=2, date_format="iso")
