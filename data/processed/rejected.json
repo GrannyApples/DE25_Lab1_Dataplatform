@@ -42,6 +42,13 @@
     "created_at":"2024-06-20"
   },
   {
+    "id":"SKU-1014",
+    "name":"t-shirt",
+    "price":"0",
+    "currency":"SEK",
+    "created_at":"2024-04-10"
+  },
+  {
     "id":"SKU-1015",
     "name":"hoodie",
     "price":"-50",

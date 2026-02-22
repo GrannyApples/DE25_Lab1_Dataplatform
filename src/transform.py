@@ -5,6 +5,7 @@ def clean_data(path):
     df = pd.read_json(path)
     ##Went over lambda expressions in lekt 7,
     # did this because it worked better than what we went through during the lecture.
+
     ##df = df.map(lambda x: x.strip() if isinstance(x, str) else x)
     ##both of these work, both the for loop and the lambda.
     for col in df.select_dtypes(include="object"):
@@ -12,10 +13,13 @@ def clean_data(path):
 
 
     ###For the pydantic version as you can see i got alot of help from LLMs
+    ## because pydantic in its simplest form, wont flag float "" or float null apparently.
     ##it wasent rly my intention to even use pydantic, but i ended up here anyways to see what the difference was.
     validated_records = []
     rejected_records = []
 
+    ## well i dont need all of this to make it work, it was just from the perspective of,
+    # what if i have multiple float values and not just "price"
     float_fields = [
         name for name, type_ in Product.__annotations__.items()
         if getattr(type_, "__origin__", None) is not None and float in getattr(type_, "__args__", ())
@@ -47,6 +51,7 @@ def clean_data(path):
 
 
     ##if something is stated as free, it will replace it with 0
+    # read later that we should simply flag, and never replace.
     df["price"] = df["price"].replace("free", 0)
 
     ##errors become NaN previously Free would be NaN since its not numeric, after using replace to swap free to 0, this should not be an issue

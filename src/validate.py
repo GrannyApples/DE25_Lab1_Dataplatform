@@ -24,7 +24,7 @@ class Product(BaseModel):
     ##check positive price
     @validator("price")
     def price_positive(cls, v):
-        if v is not None and v < 0:
+        if v is not None and v <= 0:
             raise ValueError("Negative price")
         return v
 

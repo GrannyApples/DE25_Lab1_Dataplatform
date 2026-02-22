@@ -49,13 +49,6 @@
     "created_at":"2024-04-01T00:00:00.000"
   },
   {
-    "id":"SKU-1014",
-    "name":"t-shirt",
-    "price":0.0,
-    "currency":"SEK",
-    "created_at":"2024-04-10T00:00:00.000"
-  },
-  {
     "id":"SKU-1016",
     "name":"coat",
     "price":2500.0,
